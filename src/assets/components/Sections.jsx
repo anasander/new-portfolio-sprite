@@ -137,11 +137,28 @@ function Sections() {
 
   return (
     <>
-      <section id="green-section" className="section">Seção 1 (Verde)</section>
-      <section id="orange-section" className="section" ref={orangeSectionRef}>
+      <section id="about" className="section">
+        <div className='about-titles'>
+          <h1 className='font-primary text-size-96'>Ana Sander</h1>
+          <div className='about-exp text-size-32'>
+            <p>Web Designer | UX/UI Designer</p>
+            <p>Front-End Developer</p>
+          </div>
+        </div>
+
+        <div className='about-images'>
+          <img className='sprite-ana-full' src="./src/assets/sprites/sprites-mia/sprite-mia-new.png" alt="" />
+          <img className='sprite-mia-full' src="./src/assets/sprites/sprites-ana/sprite-ana-full.png" alt="" />
+        </div>
+      </section>
+
+      <div className='extra-bg section'></div>
+
+      <section id="ed-background" className="section" ref={orangeSectionRef}>
         Seção 2 (Laranja)
       </section>
-      <section id="blue-section" className="section">Seção 3 (Azul)</section>
+
+      <section id="projects" className="section">Seção 3 (Azul)</section>
 
       <div id="character-container" ref={characterContainerRef}>
         <div id="player" className="character" ref={playerRef}></div>
