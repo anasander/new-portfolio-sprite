@@ -1,3 +1,5 @@
+import  About from './About';
+
 import { useEffect, useRef } from 'react'
 
 function Sections() {
@@ -137,22 +139,34 @@ function Sections() {
 
   return (
     <>
-      <section id="about" className="section">
-        <div className='about-titles'>
+      <section id="hero" className="section">
+        <div className='hero-titles'>
           <h1 className='font-primary text-size-96'>Ana Sander</h1>
-          <div className='about-exp text-size-32'>
+          <div className='hero-exp text-size-32'>
             <p>Web Designer | UX/UI Designer</p>
             <p>Front-End Developer</p>
           </div>
         </div>
 
-        <div className='about-images'>
-          <img className='sprite-ana-full' src="./src/assets/sprites/sprites-mia/sprite-mia-new.png" alt="" />
-          <img className='sprite-mia-full' src="./src/assets/sprites/sprites-ana/sprite-ana-full.png" alt="" />
+        <div className='hero-images'>
+          <img className='sprite-full' src="./src/assets/sprites/sprites-mia/sprite-mia-full-1.png" alt="" />
+          <img className='sprite-full' src="./src/assets/sprites/sprites-ana/sprite-ana-full-1.png" alt="" />
         </div>
       </section>
 
-      <div className='extra-bg section'></div>
+      <div className='extra-bg'>
+        {/* <ul className='hero-selection text-size-20'>
+          <li><a href="/">Sobre</a></li>
+          <li><a href="/">Formação</a></li>
+          <li><a href="/">Projetos</a></li>
+          <li><a href="/">Contato</a></li>
+        </ul> */}
+        <div id='about' className='hero-selection'>
+          <h2 className='text-size-32'>Sobre</h2>
+          <p className='text-size-20'>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum</p>
+        </div>
+        <About />
+      </div>
 
       <section id="ed-background" className="section" ref={orangeSectionRef}>
         Seção 2 (Laranja)
