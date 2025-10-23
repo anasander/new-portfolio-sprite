@@ -73,8 +73,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    padding: 100px 20px;
+    gap: 100px;
+    padding: 200px 100px;
 }
 
 #about {
@@ -93,6 +93,7 @@
     background: var(--white);
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 20px 40px;
     color: var(--black);
     border: 5px solid var(--black);
@@ -149,6 +150,10 @@
 }
 
 @media (max-width:650px) {
+    #hero {
+        height: 80vh;
+    }
+
     #hero h1 {
         font-size:60px;
         -webkit-text-stroke: 12px var(--bright-blue);
@@ -157,5 +162,19 @@
     #hero p {
         font-size:28px;
         -webkit-text-stroke: 8px var(--white);
+    }
+
+    .extra-bg {
+        flex-direction: column;
+        gap: 0;
+        padding: 120px 20px;
+    }
+
+    .hero-selection {
+        padding: 40px 20px;
+    }
+
+    .hero-selection p {
+        font-size: 16px;
     }
 }

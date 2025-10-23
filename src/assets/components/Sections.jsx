@@ -163,7 +163,12 @@ function Sections() {
         </ul> */}
         <div id='about' className='hero-selection'>
           <h2 className='text-size-32'>Sobre</h2>
-          <p className='text-size-20'>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum</p>
+          <p className='text-size-20'>👋 Olá!</p>
+          <p className='text-size-20'>Seja bem-vindo(a) ao meu laboratório digital, um espaço de descobertas de design e código!</p>
+          <p className='text-size-20'>Eu sou <span className='bold'>Ana Sander</span>, <span className='bold'>Web Designer e UX/UI Designer</span> com foco em desenvolvimento front-end. Acredito que cada projeto começa com curiosidade, cresce com estratégia e evolui com dedicação.</p>
+          <p className='text-size-20'>Utilizo <span className='bold'>HTML, CSS, JavaScript, Python, Scrum e React</span> para criar experiências que unem funcionalidade, estética e propósito. Meu objetivo é transformar ideias em interfaces envolventes, acessíveis e cheias de personalidade. 😎</p>
+          <p className='text-size-20'>O mundo da web é vasto e cheio de possibilidades…</p>
+          <p className='text-size-20'>Está pronto(a) para fazer parte dessa jornada? 👩‍🚀🚀</p>
         </div>
         <About />
       </div>

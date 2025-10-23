@@ -7,11 +7,11 @@ export default function Pokedevice() {
   const data = {
     ana: {
       image: "url('./src/assets/img/photo-ana.jpg')",
-      text: "Olá, eu sou a Ana! Sou uma desenvolvedora criativa e adoro participar de projetos incríveis usando minhas diversas habilidades em Web Design, UX/UI Design e Front-End. Games são minha paixão, e meu jogo favorito é 'Shadow of the Colossus'."
+      text: "Ana: desenvolvedora criativa e adora participar de projetos incríveis usando suas habilidades em Web Design, UX/UI Design e Front-End. Games são sua paixão, e seu jogo favorito é 'Shadow of the Colossus'."
     },
     mia: {
       image: "url('./src/assets/img/photo-mia.jpg')",
-      text: "Mia é a minha parceira felina, fofa e medrosa em proporções iguais, que ilumina a vida de todos ao seu redor. Adora falar (miar) e também devorar derivados lácteos."
+      text: "Mia: parceira felina. Fofa e medrosa em proporções iguais; ilumina a vida de todos ao seu redor. Adora falar (miar) e também devorar derivados lácteos."
     }
   };
 
