@@ -285,6 +285,7 @@ section {
   width:100%;
   height:auto;
   max-height:110px;
+  min-height: 110px;
   overflow:auto;
   padding:5px 10px;
   border-radius:5px;

@@ -50,10 +50,10 @@ function Header() {
       <a href="/" className='font-primary text-size-46'>Ana Sander</a>
       <div>
         <nav>
-          <a href="/" className='text-size-20'>Sobre</a>
-          <a href="/" className='text-size-20'>Formação</a>
-          <a href="/" className='text-size-20'>Projetos</a>
-          <a href="/" className='text-size-20'>Contato</a>
+          <a href="#about" className='text-size-20'>Sobre</a>
+          <a href="#ed-background" className='text-size-20'>Formação</a>
+          <a href="#projects" className='text-size-20'>Projetos</a>
+          <a href="#contact" className='text-size-20'>Contato</a>
           <a href="/" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}
         ></a>
         </nav>
@@ -78,10 +78,10 @@ function Header() {
             </button>
 
             <nav>
-              <a href="/" onClick={handleCloseMenu}>Sobre</a>
-              <a href="/" onClick={handleCloseMenu}>Formação</a>
-              <a href="/" onClick={handleCloseMenu}>Projetos</a>
-              <a href="/" onClick={handleCloseMenu}>Contato</a>
+              <a href="#about" onClick={handleCloseMenu}>Sobre</a>
+              <a href="#ed-background" onClick={handleCloseMenu}>Formação</a>
+              <a href="#projects" onClick={handleCloseMenu}>Projetos</a>
+              <a href="#contact" onClick={handleCloseMenu}>Contato</a>
               <a href="/" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}></a>
             </nav>
           </div>

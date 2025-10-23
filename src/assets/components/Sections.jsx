@@ -155,13 +155,7 @@ function Sections() {
       </section>
 
       <div className='extra-bg'>
-        {/* <ul className='hero-selection text-size-20'>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Formação</a></li>
-          <li><a href="/">Projetos</a></li>
-          <li><a href="/">Contato</a></li>
-        </ul> */}
-        <div id='about' className='hero-selection'>
+        <div id='about' className='hero-desc scroll-to-section'>
           <h2 className='text-size-32'>Sobre</h2>
           <p className='text-size-20'>👋 Olá!</p>
           <p className='text-size-20'>Seja bem-vindo(a) ao meu laboratório digital, um espaço de descobertas de design e código!</p>
@@ -173,11 +167,21 @@ function Sections() {
         <About />
       </div>
 
+      <div id='bg-separator'>
+        <div>
+          <h2 className='text-size-32'>Caminho da Formação</h2>
+        </div>
+      </div>
+
       <section id="ed-background" className="section" ref={orangeSectionRef}>
-        Seção 2 (Laranja)
+        <div className='bg-left'></div>
+        <div className='bg-center'></div>
+        <div className='bg-right'></div>
       </section>
 
       <section id="projects" className="section">Seção 3 (Azul)</section>
+
+      <section id="contact" className="section">Seção 4 (Verde)</section>
 
       <div id="character-container" ref={characterContainerRef}>
         <div id="player" className="character" ref={playerRef}></div>
