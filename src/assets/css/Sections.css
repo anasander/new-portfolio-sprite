@@ -174,11 +174,35 @@
 .ed {
     width: 80px;
     height: 80px;
-    background: var(--bright-blue);
-    filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
+    image-rendering: pixelated;
+    filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.8));
     border: none;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.ed-1 {
+    background-image: url('../sprites/sprites-ed/sprite-origamid.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ed-2 {
+    background-image: url('../sprites/sprites-ed/sprite-google.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ed-3 {
+    background-image: url('../sprites/sprites-ed/sprite-scrum.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ed-4 {
+    background-image: url('../sprites/sprites-ed/sprite-toledo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ed:hover {
@@ -202,7 +226,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 40px;
+    padding: 40px;
     color: var(--black);
     border: 5px solid var(--black);
     border-style: outset;
@@ -217,33 +241,19 @@
 .ed-popup img {
     max-width: 100%;
     border-radius: 8px;
+    height: 200px;
+    background-size: cover;
 }
 
-.close-btn-popup {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--white);
-    color: var(--black);
-    padding: 5px 11px 7px 12px;
-    line-height: 28px;
-    border: 3px solid var(--black);
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.2s;
-    font-family: "Jersey 20", sans-serif;
-    font-weight: 700;
-    filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.25));
-}
-
-.close-btn-popup:hover {
-    filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
+.ed-popup h3 {
+    line-height: 22px;
 }
 
 .tags {
     display: flex;
     gap: 8px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tags span {
@@ -253,6 +263,19 @@
     border-radius: 2px;
     font-weight: 600;
     font-size: 14px;
+}
+
+.popup-link {
+    width: 100px;
+    color: var(--bright-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.popup-link:hover {
+    color: var(--clear-blue);
+    text-decoration: underline;
 }
 
 @keyframes fadeIn {
@@ -319,6 +342,10 @@
 
     .hero-selection p {
         font-size: 16px;
+    }
+
+    .ed-popup {
+        padding: 40px 20px;
     }
 
     #player, #cat {

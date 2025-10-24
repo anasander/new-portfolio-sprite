@@ -142,22 +142,32 @@ function Sections() {
 
   const edContent = {
     "ed-1": {
-      img: "https://via.placeholder.com/200x120.png?text=Imagem+1",
-      title: "Título 1",
-      text: "Este é o conteúdo referente ao botão 1.",
-      tags: ["React", "CSS", "Interatividade"],
+      img: "./src/assets/documents/origamid-img.png",
+      title: "Origamid - Curso de Front-End e UX/UI Design (2022)",
+      text: "Curso com foco em Front-End, incluíndo HTML, CSS, JavaScript, React, entre outros.",
+      tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
+      link: "./src/assets/documents/front-end-full.pdf"
     },
     "ed-2": {
-      img: "https://via.placeholder.com/200x120.png?text=Imagem+2",
-      title: "Título 2",
-      text: "Conteúdo diferente para o botão 2.",
-      tags: ["HTML", "UX", "Componentes"],
+      img: "",
+      title: "Curso Profissional UX/UI Design (2023)",
+      text: "Curso profissional de UX/UI Design ofertado pelo Google em parceria com o Coursera.",
+      tags: ["UX/UI", "Tipografia", "Design digital", "Wireframing", "Prototipagem"],
+      link: "https://www.coursera.org/account/accomplishments/professional-cert/3NM2Z99TSDY9"
     },
     "ed-3": {
-      img: "https://via.placeholder.com/200x120.png?text=Imagem+3",
-      title: "Título 3",
-      text: "Texto relacionado ao botão 3.",
-      tags: ["JavaScript", "Hooks", "Eventos"],
+      img: "",
+      title: "Certificado Profissional Scrum (2023)",
+      text: "Certificado digital profissional em habilidades em  metodologia ágil Scrum.",
+      tags: ["Scrum", "Gerenciamento de projetos", "Sprints", "Planejamento"],
+      link: "https://www.credly.com/earner/earned/badge/96ba3695-c3cf-42c0-b665-8dbdc2b08185"
+    },
+    "ed-4": {
+      img: "",
+      title: "Análise e Desenvolvimento de Sistemas (2025-2027)",
+      text: "Graduação em Análise e Desenvolvimento de Sistemas (EAD) pela Toledo Prudente Centro Universitário.",
+      tags: ["Banco de Dados", "POO", "Design Thinking", "Engenharia de Software", "Algorítmos"],
+      link: "https://toledoprudente.edu.br/"
     },
   };
 
@@ -188,6 +198,8 @@ function Sections() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [activeEd]);
+
+  const currentEd = activeEd ? edContent[activeEd] : null;
 
   return (
     <>
@@ -229,26 +241,37 @@ function Sections() {
       <div className="bg-left">
         <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
         <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
-        <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
       </div>
 
       <div className="bg-center"></div>
 
       <div className="bg-right">
-        <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
-        <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
         <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
+        <button className="ed ed-4" onClick={() => setActiveEd("ed-4")}></button>
       </div>
 
-      {activeEd && (
+      {currentEd && (
         <div className="ed-popup-overlay">
           <div className="ed-popup" ref={popupRef}>
-            <button className="close-btn-popup" onClick={() => setActiveEd(null)}>×</button>
-            <img src={edContent[activeEd].img} alt={edContent[activeEd].title} />
-            <h3>{edContent[activeEd].title}</h3>
-            <p>{edContent[activeEd].text}</p>
+            <button className="close-btn" onClick={() => setActiveEd(null)}>×</button>
+
+            <img src={currentEd.img} alt={currentEd.title} />
+            <h3>{currentEd.title}</h3>
+            <p>{currentEd.text}</p>
+
+            {currentEd.link && (
+              <a
+                href={currentEd.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="popup-link"
+              >
+                Acessar ↗
+              </a>
+            )}
+
             <div className="tags">
-              {edContent[activeEd].tags.map((tag) => (
+              {currentEd.tags.map((tag) => (
                 <span key={tag}>{tag}</span>
               ))}
             </div>
