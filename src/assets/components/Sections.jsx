@@ -1,6 +1,6 @@
 import  About from './About';
 
-import { useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function Sections() {
   const playerRef = useRef(null)
@@ -137,6 +137,58 @@ function Sections() {
     }
   }, [])
 
+  const [activeEd, setActiveEd] = useState(null);
+  const popupRef = useRef(null);
+
+  const edContent = {
+    "ed-1": {
+      img: "https://via.placeholder.com/200x120.png?text=Imagem+1",
+      title: "Título 1",
+      text: "Este é o conteúdo referente ao botão 1.",
+      tags: ["React", "CSS", "Interatividade"],
+    },
+    "ed-2": {
+      img: "https://via.placeholder.com/200x120.png?text=Imagem+2",
+      title: "Título 2",
+      text: "Conteúdo diferente para o botão 2.",
+      tags: ["HTML", "UX", "Componentes"],
+    },
+    "ed-3": {
+      img: "https://via.placeholder.com/200x120.png?text=Imagem+3",
+      title: "Título 3",
+      text: "Texto relacionado ao botão 3.",
+      tags: ["JavaScript", "Hooks", "Eventos"],
+    },
+  };
+
+  useEffect(() => {
+    if (activeEd) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeEd]);
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (popupRef.current && !popupRef.current.contains(e.target)) {
+        setActiveEd(null);
+      }
+    }
+
+    if (activeEd) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activeEd]);
+
   return (
     <>
       <section id="hero" className="section">
@@ -169,15 +221,41 @@ function Sections() {
 
       <div id='bg-separator'>
         <div>
-          <h2 className='text-size-32'>Caminho da Formação</h2>
+          <h2 className='text-size-32'>Jornada da Formação</h2>
         </div>
       </div>
 
       <section id="ed-background" className="section" ref={orangeSectionRef}>
-        <div className='bg-left'></div>
-        <div className='bg-center'></div>
-        <div className='bg-right'></div>
-      </section>
+      <div className="bg-left">
+        <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
+        <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
+        <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
+      </div>
+
+      <div className="bg-center"></div>
+
+      <div className="bg-right">
+        <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
+        <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
+        <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
+      </div>
+
+      {activeEd && (
+        <div className="ed-popup-overlay">
+          <div className="ed-popup" ref={popupRef}>
+            <button className="close-btn-popup" onClick={() => setActiveEd(null)}>×</button>
+            <img src={edContent[activeEd].img} alt={edContent[activeEd].title} />
+            <h3>{edContent[activeEd].title}</h3>
+            <p>{edContent[activeEd].text}</p>
+            <div className="tags">
+              {edContent[activeEd].tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
 
       <section id="projects" className="section">Seção 3 (Azul)</section>
 
