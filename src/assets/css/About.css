@@ -267,6 +267,10 @@ section {
 }
 
 #area-buttons button {
+  cursor: pointer;
+}
+
+#area-buttons button {
   background:#28aafd;
   border:none;
   padding:5px 10px;

@@ -209,6 +209,10 @@
     transform: scale(1.1);
 }
 
+.color-gray {
+    background: var(--gray);
+}
+
 .ed-popup-overlay {
     position: fixed;
     inset: 0;
@@ -238,11 +242,16 @@
     animation: fadeIn 0.3s ease;
 }
 
+.ed-popup button {
+    z-index: 99;
+}
+
 .ed-popup img {
     max-width: 100%;
     border-radius: 8px;
     height: 200px;
     background-size: cover;
+    filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.25));
 }
 
 .ed-popup h3 {

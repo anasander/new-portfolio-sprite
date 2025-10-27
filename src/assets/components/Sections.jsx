@@ -149,25 +149,25 @@ function Sections() {
       link: "./src/assets/documents/front-end-full.pdf"
     },
     "ed-2": {
-      img: "",
-      title: "Curso Profissional UX/UI Design (2023)",
+      img: "./src/assets/documents/google-certificate.png",
+      title: "Curso Profissional Google UX/UI Design (2023)",
       text: "Curso profissional de UX/UI Design ofertado pelo Google em parceria com o Coursera.",
       tags: ["UX/UI", "Tipografia", "Design digital", "Wireframing", "Prototipagem"],
       link: "https://www.coursera.org/account/accomplishments/professional-cert/3NM2Z99TSDY9"
     },
     "ed-3": {
-      img: "",
+      img: "./src/assets/documents/scrum-certificate.png",
       title: "Certificado Profissional Scrum (2023)",
       text: "Certificado digital profissional em habilidades em  metodologia ágil Scrum.",
       tags: ["Scrum", "Gerenciamento de projetos", "Sprints", "Planejamento"],
       link: "https://www.credly.com/earner/earned/badge/96ba3695-c3cf-42c0-b665-8dbdc2b08185"
     },
     "ed-4": {
-      img: "",
+      img: "./src/assets/documents/toledo-img.png",
       title: "Análise e Desenvolvimento de Sistemas (2025-2027)",
       text: "Graduação em Análise e Desenvolvimento de Sistemas (EAD) pela Toledo Prudente Centro Universitário.",
       tags: ["Banco de Dados", "POO", "Design Thinking", "Engenharia de Software", "Algorítmos"],
-      link: "https://toledoprudente.edu.br/"
+      // link: "https://toledoprudente.edu.br/"
     },
   };
 
@@ -253,7 +253,7 @@ function Sections() {
       {currentEd && (
         <div className="ed-popup-overlay">
           <div className="ed-popup" ref={popupRef}>
-            <button className="close-btn" onClick={() => setActiveEd(null)}>×</button>
+            <button className="close-btn color-gray" onClick={() => setActiveEd(null)}>×</button>
 
             <img src={currentEd.img} alt={currentEd.title} />
             <h3>{currentEd.title}</h3>
