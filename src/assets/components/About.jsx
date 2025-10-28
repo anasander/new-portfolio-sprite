@@ -22,7 +22,7 @@ export default function Pokedevice() {
   }, [character]);
 
   return (
-    <section>
+    <section id="pkdx">
       <div id="red-exterior">
         <div id="top-area">
           <div id="top-area-1">

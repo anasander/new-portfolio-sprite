@@ -1,4 +1,5 @@
 import  About from './About';
+import Projects from './Projects';
 
 import { useState, useEffect, useRef } from 'react'
 
@@ -122,7 +123,7 @@ function Sections() {
           }
         })
       },
-      { threshold: 0.4 }
+      { threshold: 0.6 }
     )
 
     observer.observe(orangeSection)
@@ -203,7 +204,7 @@ function Sections() {
 
   return (
     <>
-      <section id="hero" className="section">
+      <section id="hero">
         <div className='hero-titles'>
           <h1 className='font-primary text-size-96'>Ana Sander</h1>
           <div className='hero-exp text-size-32'>
@@ -237,52 +238,54 @@ function Sections() {
         </div>
       </div>
 
-      <section id="ed-background" className="section" ref={orangeSectionRef}>
-      <div className="bg-left">
-        <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
-        <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
-      </div>
+      <section id="ed-background" className='scroll-to-section' ref={orangeSectionRef}>
+        <div className="bg-left">
+          <button className="ed ed-1" onClick={() => setActiveEd("ed-1")}></button>
+          <button className="ed ed-2" onClick={() => setActiveEd("ed-2")}></button>
+        </div>
 
-      <div className="bg-center"></div>
+        <div className="bg-center"></div>
 
-      <div className="bg-right">
-        <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
-        <button className="ed ed-4" onClick={() => setActiveEd("ed-4")}></button>
-      </div>
+        <div className="bg-right">
+          <button className="ed ed-3" onClick={() => setActiveEd("ed-3")}></button>
+          <button className="ed ed-4" onClick={() => setActiveEd("ed-4")}></button>
+        </div>
 
-      {currentEd && (
-        <div className="ed-popup-overlay">
-          <div className="ed-popup" ref={popupRef}>
-            <button className="close-btn color-gray" onClick={() => setActiveEd(null)}>×</button>
+        {currentEd && (
+          <div className="ed-popup-overlay">
+            <div className="ed-popup" ref={popupRef}>
+              <button className="close-btn color-gray" onClick={() => setActiveEd(null)}>×</button>
 
-            <img src={currentEd.img} alt={currentEd.title} />
-            <h3>{currentEd.title}</h3>
-            <p>{currentEd.text}</p>
+              <img src={currentEd.img} alt={currentEd.title} />
+              <h3>{currentEd.title}</h3>
+              <p>{currentEd.text}</p>
 
-            {currentEd.link && (
-              <a
-                href={currentEd.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="popup-link"
-              >
-                Acessar ↗
-              </a>
-            )}
+              {currentEd.link && (
+                <a
+                  href={currentEd.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="popup-link"
+                >
+                  Acessar ↗
+                </a>
+              )}
 
-            <div className="tags">
-              {currentEd.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
+              <div className="tags">
+                {currentEd.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </section>
+        )}
+      </section>
 
-      <section id="projects" className="section">Seção 3 (Azul)</section>
+      <section id="projects" className='scroll-to-section'>
+        <Projects />
+      </section>
 
-      <section id="contact" className="section">Seção 4 (Verde)</section>
+      <section id="contact" className='scroll-to-section'></section>
 
       <div id="character-container" ref={characterContainerRef}>
         <div id="player" className="character" ref={playerRef}></div>

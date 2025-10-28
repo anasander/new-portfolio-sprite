@@ -2,6 +2,7 @@
 @import "./assets/css/Sections.css";
 @import "./assets/css/Footer.css";
 @import "./assets/css/About.css";
+@import "./assets/css/Projects.css";
 
 :root {
     --dark-blue: #53528C;
@@ -10,6 +11,7 @@
     --clear-green: #65A49B;
     --bright-yellow: #FFDE00;
     --bright-blue: #0163C6;
+    --clear-gray: #a5a5a5;
     --gray: #949494;
     --white: #FFFFFF;
     --black: #000000;
@@ -81,6 +83,16 @@ body {
     font-weight: 700;
 }
 
+.div-themed {
+    background: var(--white);
+    padding: 20px 40px;
+    color: var(--black);
+    border: 5px solid var(--black);
+    border-style: outset;
+    border-color: var(--black);
+    filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
+}
+
 .scroll-to-section {
     scroll-margin-top: 200px;
 }
@@ -97,6 +109,4 @@ body {
 
 .chest:hover {
     background-image: url('./assets/sprites/sprites-ow/sprite-chest-open.png');
-    width: 40px;
-    height: 40px;
 }
