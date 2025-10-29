@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 10px 10px 0 10px;
+    padding: 20px 20px 0 20px;
 }
 
 .hero-exp {
@@ -310,15 +310,11 @@
     to { opacity: 1; transform: scale(1); }
 }
 
-#contact {
-    background: green;
-}
-
 @media (max-width:1000px) {
     .extra-bg {
         flex-direction: column;
         gap: 0;
-        padding: 120px 20px;
+        padding: 120px 20px 80px 20px;
     }
 }
 
@@ -343,6 +339,10 @@
 
     .hero-selection p {
         font-size: 16px;
+    }
+
+    #bg-separator > div > h2 {
+        font-size: 24px;
     }
 
     .ed-popup {

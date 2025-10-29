@@ -8,7 +8,8 @@
 .bg-blue {
     background-image: url('../sprites/sprites-ow/sprite-floor-blue.png');
     width: 30%;
-    height: 100%;
+    height: 700px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +17,7 @@
 
 .project-list {
     width: 70%;
-    height: 100%;
+    height: 700px;
     background: var(--white);
     padding: 20px;
 }
@@ -25,24 +26,65 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-height: 620px;
-    overflow: auto;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
 }
 
 .project-item {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     width: 100%;
     padding: 20px !important;
     background: var(--clear-gray);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-item:hover {
+    background: var(--white);
+    border: 4px solid var(--black);
+    border-style: outset;
+    border-color: var(--black);
+    filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
 }
 
 .project-item img {
     width: 80px;
     height: 80px;
     background: red;
+    border: 2px solid var(--black);
+}
+
+.project-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--black);
+}
+
+.project-text-content p,
+.project-text-content h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    background: var(--clear-blue);
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 @media (max-width:750px) {
@@ -52,10 +94,11 @@
 
     .bg-blue {
         width: 100%;
-        height: 200px;
+        height: auto;
     }
 
     .project-list {
         width: 100%;
+        height: 580px;
     }
 }
