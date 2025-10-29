@@ -3,6 +3,7 @@
 @import "./assets/css/Footer.css";
 @import "./assets/css/About.css";
 @import "./assets/css/Projects.css";
+@import "./assets/css/Contact.css";
 
 :root {
     --dark-blue: #53528C;
@@ -94,7 +95,7 @@ body {
 }
 
 .scroll-to-section {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 100px;
 }
 
 .chest {

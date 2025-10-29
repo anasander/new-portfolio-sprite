@@ -50,18 +50,18 @@ function Projects() {
             link: "https://www.figma.com/proto/lk1fKIHUfmNZtPmCfc6Fwb/RoR?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&scaling=scale-down-width&t=yFwFW0ZWBiW6ZWZU-1s"
         },
         "p-2": {
+            img: "./src/assets/img/hi-fi-rush-img.png",
+            title: "Hi-Fi Rush (2023)",
+            sub: "Um site ficcional da banda 'Hi-Fi Rush' do jogo de mesmo nome.",
+            tags: ["HTML", "CSS", "UX/UI", "Tipografia"],
+            link: "https://github.com/anasander/hi-fi-rush"
+        },
+        "p-1": {
             img: "./src/assets/img/iguana-games-img.png",
             title: "Iguana Games (2022)",
             sub: "Um site ficcional de uma empresa de venda de jogos de videogame e seus acessórios.",
             tags: ["HTML", "CSS", "JavaScript", "UX/UI", "Tipografia"],
             link: "https://github.com/anasander/iguana-games"
-        },
-        "p-1": {
-            img: "./src/assets/img/hi-fi-rush-img.png",
-            title: "Iguana Games (2022)",
-            sub: "Um site ficcional da banda 'Hi-Fi Rush' do jogo de mesmo nome.",
-            tags: ["HTML", "CSS", "UX/UI", "Tipografia"],
-            link: "https://github.com/anasander/hi-fi-rush"
         },
     }
 

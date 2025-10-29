@@ -1,5 +1,6 @@
-import  About from './About';
+import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 
 import { useState, useEffect, useRef } from 'react'
 
@@ -285,7 +286,9 @@ function Sections() {
         <Projects />
       </section>
 
-      <section id="contact" className='scroll-to-section'></section>
+      <section id="contact" className='scroll-to-section'>
+        <Contact />
+      </section>
 
       <div id="character-container" ref={characterContainerRef}>
         <div id="player" className="character" ref={playerRef}></div>
