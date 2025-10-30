@@ -1,18 +1,17 @@
-// import { useState } from 'react'
-import Header from './assets/components/Header'
-import Sections from './assets/components/Sections'
-import Footer from './assets/components/Footer'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './assets/pages/Home';
+import Secret from './assets/pages/Secret';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <Sections />
-      <Footer />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/secret" element={<Secret />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

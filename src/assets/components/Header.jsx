@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../css/Header.css'
 
 function Header() {
@@ -45,23 +46,30 @@ function Header() {
     setTimeout(() => setMenuOpen(false), 200);
   };
 
+  const location = useLocation();
+  const isSecretPage = location.pathname === '/Secret';
+
   return (
     <header id="header">
-      <a href="/" className='font-primary text-size-46'>Ana Sander</a>
+      <Link to="/" className='font-primary text-size-46'>Ana Sander</Link>
+
       <div>
+        {!isSecretPage && (
         <nav>
           <a href="#about" className='text-size-20'>Sobre</a>
           <a href="#ed-background" className='text-size-20'>Formação</a>
           <a href="#projects" className='text-size-20'>Projetos</a>
           <a href="#contact" className='text-size-20'>Contato</a>
-          <a href="/" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}
-        ></a>
+          <Link to="/Secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}
+          ></Link>
         </nav>
+      )}
 
-
+      {!isSecretPage && (
         <button className='btn-menu-header text-size-20' onClick={handleOpenMenu}>
           Menu
         </button>
+      )}
       </div>
 
       {menuOpen && (
@@ -82,7 +90,7 @@ function Header() {
               <a href="#ed-background" onClick={handleCloseMenu}>Formação</a>
               <a href="#projects" onClick={handleCloseMenu}>Projetos</a>
               <a href="#contact" onClick={handleCloseMenu}>Contato</a>
-              <a href="/" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}></a>
+              <Link to="/Secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}></Link>
             </nav>
           </div>
         </div>

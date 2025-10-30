@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-export default function Pokedevice() {
+function Pokedevice() {
   const [character, setCharacter] = useState(null);
   const textRef = useRef(null);
 
@@ -87,3 +87,5 @@ export default function Pokedevice() {
     </section>
   );
 }
+
+export default Pokedevice

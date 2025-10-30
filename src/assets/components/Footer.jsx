@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 import '../css/Footer.css'
 
 function Footer() {
@@ -18,7 +19,7 @@ function Footer() {
 
   return (
     <footer id="footer">
-      <a href="/" className='chest' onClick={handleShowChest}></a>
+      <Link to="/Secret" className='chest' onClick={handleShowChest}></Link>
     </footer>
   )
 }

@@ -4,6 +4,7 @@
 @import "./assets/css/About.css";
 @import "./assets/css/Projects.css";
 @import "./assets/css/Contact.css";
+@import "./assets/css/Secret.css";
 
 :root {
     --dark-blue: #53528C;
@@ -28,6 +29,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    border: none;
 }
 
 body {
@@ -74,6 +76,10 @@ body {
 
 .text-size-16 {
     font-size: 16px;
+}
+
+.text-size-14 {
+    font-size: 14px;
 }
 
 .padding-100 {
