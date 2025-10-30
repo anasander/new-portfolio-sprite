@@ -18,6 +18,12 @@ import mwalk2f from '../sprites/sprites-mia/sprite-mia-2f.png'
 import mwalk1bb from '../sprites/sprites-mia/sprite-mia-1b.png'
 import mwalk2bb from '../sprites/sprites-mia/sprite-mia-2b.png'
 
+import edOrigamid from "../documents/origamid-img.png"
+import edScrum from "../documents/scrum-certificate.png"
+import edGoogle from "../documents/google-certificate.png"
+import edToledo from "../documents/toledo-img.png"
+import frontEndOri from "../documents/front-end-full.pdf"
+
 function Sections() {
   const playerRef = useRef(null)
   const catRef = useRef(null)
@@ -158,32 +164,31 @@ function Sections() {
 
   const edContent = {
     "ed-1": {
-      img: "./src/assets/documents/origamid-img.png",
+      img: edOrigamid,
       title: "Origamid - Curso de Front-End e UX/UI Design (2022)",
       text: "Curso com foco em Front-End, incluíndo HTML, CSS, JavaScript, React, entre outros.",
       tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
-      link: "./src/assets/documents/front-end-full.pdf"
+      link: frontEndOri
     },
     "ed-2": {
-      img: "./src/assets/documents/google-certificate.png",
+      img: edGoogle,
       title: "Curso Profissional Google UX/UI Design (2023)",
       text: "Curso profissional de UX/UI Design ofertado pelo Google em parceria com o Coursera.",
       tags: ["UX/UI", "Tipografia", "Design digital", "Wireframing", "Prototipagem"],
       link: "https://www.coursera.org/account/accomplishments/professional-cert/3NM2Z99TSDY9"
     },
     "ed-3": {
-      img: "./src/assets/documents/scrum-certificate.png",
+      img: edScrum,
       title: "Certificado Profissional Scrum (2023)",
       text: "Certificado digital profissional em habilidades em  metodologia ágil Scrum.",
       tags: ["Scrum", "Gerenciamento de projetos", "Sprints", "Planejamento"],
       link: "https://www.credly.com/earner/earned/badge/96ba3695-c3cf-42c0-b665-8dbdc2b08185"
     },
     "ed-4": {
-      img: "./src/assets/documents/toledo-img.png",
+      img: edToledo,
       title: "Análise e Desenvolvimento de Sistemas (2025-2027)",
       text: "Graduação em Análise e Desenvolvimento de Sistemas (EAD) pela Toledo Prudente Centro Universitário.",
       tags: ["Banco de Dados", "POO", "Design Thinking", "Engenharia de Software", "Algorítmos"],
-      // link: "https://toledoprudente.edu.br/"
     },
   };
 
