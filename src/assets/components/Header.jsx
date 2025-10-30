@@ -51,7 +51,7 @@ function Header() {
 
   return (
     <header id="header">
-      <Link to="/" className='font-primary text-size-46'>Ana Sander</Link>
+      <a href="/" className='font-primary text-size-46'>Ana Sander</a>
 
       <div>
         {!isSecretPage && (

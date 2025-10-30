@@ -17,6 +17,11 @@
     gap: 20px;
 }
 
+.contact-container-text h2 {
+    text-align: center;
+    line-height: 40px;
+}
+
 .contact-container-links {
     display: flex;
     gap: 20px;

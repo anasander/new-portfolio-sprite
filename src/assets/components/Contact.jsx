@@ -15,13 +15,16 @@ function Contact() {
                     <a href="mailto: anagsander@gmail.com">
                         <img src="./src/assets/sprites/sprites-ow/sprite-email.png" alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/in/ana-gabriela-sander-morais-ivatio-b2302019b/">
+                    <a href="https://www.linkedin.com/in/ana-gabriela-sander-b2302019b/" target="_blank"
+                    rel="noopener noreferrer">
                         <img src="./src/assets/sprites/sprites-ow/sprite-linkedin.png" alt="" />
                     </a>
-                    <a href="https://github.com/anasander">
+                    <a href="https://github.com/anasander" target="_blank"
+                    rel="noopener noreferrer">
                         <img src="./src/assets/sprites/sprites-ow/sprite-github.png" alt="" />
                     </a>
-                    <a href="https://www.behance.net/anasander">
+                    <a href="https://www.behance.net/anasander" target="_blank"
+                    rel="noopener noreferrer">
                         <img src="./src/assets/sprites/sprites-ow/sprite-behance.png" alt="" />
                     </a>
                 </div>

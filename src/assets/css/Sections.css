@@ -52,7 +52,7 @@
 }
 
 .hero-images img {
-    background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -253,7 +253,7 @@
     border: 5px solid var(--black);
     border-style: outset;
     border-color: var(--black);
-    max-width: 100%;
+    max-width: 700px;
     max-height: 100%;
     margin: 40px;
     filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
@@ -268,7 +268,7 @@
     max-width: 100%;
     border-radius: 8px;
     height: 200px;
-    background-size: cover;
+    object-fit: contain;
     filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.25));
 }
 

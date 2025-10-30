@@ -1,25 +1,32 @@
 function Projects() {
     const projects = {
-        "p-9": {
+        "p-10": {
             img: "./src/assets/img/jogo-investidor-img.png",
             title: "Jogo do Investidor - Tindin (2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts, interfaces e landing page, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://www.ojogodoinvestidor.com.br/index.html"
         },
-        "p-8": {
+        "p-9": {
             img: "./src/assets/img/tindin-metaverso-img.png",
             title: "Metaverso Educacional - Tindin (2024-2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts e interfaces, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://app.tindin.com.br/game"
         },
-        "p-7": {
+        "p-8": {
             img: "./src/assets/img/literama-img.png",
             title: "Literama - Tindin (2024-2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts e interfaces, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://literama.tindin.com.br/game"
+        },
+        "p-7": {
+            img: "./src/assets/img/seafood-boiler-img.png",
+            title: "Seafood Boiler (2025)",
+            sub: "Criação de projeto desenvolvido utilizando Figma + WebFlow.",
+            tags: ["WebFlow", "UX/UI", "Tipografia", "Acessibilidade"],
+            link: "https://preview.webflow.com/preview/seafood-boiler-0a3c5e?utm_medium=preview_link&utm_source=designer&utm_content=seafood-boiler-0a3c5e&preview=dbad80b47668fe095266a7bab79a4255&workflow=sitePreview"
         },
         "p-6": {
             img: "./src/assets/img/adopet-img.png",
