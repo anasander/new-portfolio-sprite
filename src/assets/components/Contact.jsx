@@ -1,3 +1,10 @@
+import emailImg from '../sprites/sprites-ow/sprite-email.png'
+import linkedinImg from '../sprites/sprites-ow/sprite-linkedin.png'
+import githubImg from '../sprites/sprites-ow/sprite-github.png'
+import behanceImg from '../sprites/sprites-ow/sprite-behance.png'
+import gifAna from '../sprites/sprites-ana/sprite-ana-treasure.gif'
+import gifMia from '../sprites/sprites-mia/sprite-mia-treasure.gif'
+
 function Contact() {
     return (
         <>
@@ -13,25 +20,25 @@ function Contact() {
 
                 <div className="contact-container-links">
                     <a href="mailto: anagsander@gmail.com">
-                        <img src="./src/assets/sprites/sprites-ow/sprite-email.png" alt="" />
+                        <img src={emailImg} alt="" />
                     </a>
                     <a href="https://www.linkedin.com/in/ana-gabriela-sander-b2302019b/" target="_blank"
                     rel="noopener noreferrer">
-                        <img src="./src/assets/sprites/sprites-ow/sprite-linkedin.png" alt="" />
+                        <img src={linkedinImg} alt="" />
                     </a>
                     <a href="https://github.com/anasander" target="_blank"
                     rel="noopener noreferrer">
-                        <img src="./src/assets/sprites/sprites-ow/sprite-github.png" alt="" />
+                        <img src={githubImg} alt="" />
                     </a>
                     <a href="https://www.behance.net/anasander" target="_blank"
                     rel="noopener noreferrer">
-                        <img src="./src/assets/sprites/sprites-ow/sprite-behance.png" alt="" />
+                        <img src={behanceImg} alt="" />
                     </a>
                 </div>
 
                 <div className="contact-container-img">
-                    <img src="./src/assets/sprites/sprites-mia/sprite-mia-treasure.gif" alt="" />
-                    <img src="./src/assets/sprites/sprites-ana/sprite-ana-treasure.gif" alt="" />
+                    <img src={gifMia} alt="" />
+                    <img src={gifAna} alt="" />
                 </div>
             </div>
 

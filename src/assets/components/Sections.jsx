@@ -3,6 +3,21 @@ import Projects from './Projects';
 import Contact from './Contact';
 import { useState, useEffect, useRef } from 'react'
 
+import spriteFullAna from '../sprites/sprites-ana/sprite-ana-full-1.png'
+import spriteFullMia from '../sprites/sprites-mia/sprite-mia-full-1.png'
+import idlef from '../sprites/sprites-ana/sprite-ana-idle-f.png'
+import idleb from '../sprites/sprites-ana/sprite-ana-idle-b.png'
+import walk1f from '../sprites/sprites-ana/sprite-ana-walk-1f.png'
+import walk2f from '../sprites/sprites-ana/sprite-ana-walk-2f.png'
+import walk1b from '../sprites/sprites-ana/sprite-ana-walk-1b.png'
+import walk2b from '../sprites/sprites-ana/sprite-ana-walk-2b.png'
+import mwalk1b from '../sprites/sprites-mia/sprite-mia-1f.png'
+import mwalk2b from '../sprites/sprites-mia/sprite-mia-1b.png'
+import mwalk1f from '../sprites/sprites-mia/sprite-mia-1f.png'
+import mwalk2f from '../sprites/sprites-mia/sprite-mia-2f.png'
+import mwalk1bb from '../sprites/sprites-mia/sprite-mia-1b.png'
+import mwalk2bb from '../sprites/sprites-mia/sprite-mia-2b.png'
+
 function Sections() {
   const playerRef = useRef(null)
   const catRef = useRef(null)
@@ -19,27 +34,27 @@ function Sections() {
 
     const sprites = {
       player: {
-        idle_f: "url('./src/assets/sprites/sprites-ana/sprite-ana-idle-f.png')",
-        idle_b: "url('./src/assets/sprites/sprites-ana/sprite-ana-idle-b.png')",
+        idle_f: idlef,
+        idle_b: idleb,
         walk_f: [
-          "url('./src/assets/sprites/sprites-ana/sprite-ana-walk-1f.png')",
-          "url('./src/assets/sprites/sprites-ana/sprite-ana-walk-2f.png')",
+          walk1f,
+          walk2f
         ],
         walk_b: [
-          "url('./src/assets/sprites/sprites-ana/sprite-ana-walk-1b.png')",
-          "url('./src/assets/sprites/sprites-ana/sprite-ana-walk-2b.png')",
+          walk1b,
+          walk2b,
         ],
       },
       cat: {
-        idle_f: "url('./src/assets/sprites/sprites-mia/sprite-mia-1f.png')",
-        idle_b: "url('./src/assets/sprites/sprites-mia/sprite-mia-1b.png')",
+        idle_f: mwalk1b,
+        idle_b: mwalk2b,
         walk_f: [
-          "url('./src/assets/sprites/sprites-mia/sprite-mia-1f.png')",
-          "url('./src/assets/sprites/sprites-mia/sprite-mia-2f.png')",
+          mwalk1f,
+          mwalk2f,
         ],
         walk_b: [
-          "url('./src/assets/sprites/sprites-mia/sprite-mia-1b.png')",
-          "url('./src/assets/sprites/sprites-mia/sprite-mia-2b.png')",
+          mwalk1bb,
+          mwalk2bb,
         ],
       },
     }
@@ -53,12 +68,12 @@ function Sections() {
 
     function setIdleSprites() {
       if (lastScrollDirection === 'down') {
-        player.style.backgroundImage = sprites.player.idle_f
-        cat.style.backgroundImage = sprites.cat.idle_f
+        player.style.backgroundImage = `url(${sprites.player.idle_f})`
+        cat.style.backgroundImage = `url(${sprites.cat.idle_f})`
         characterContainer.style.flexDirection = 'column-reverse'
       } else {
-        player.style.backgroundImage = sprites.player.idle_b
-        cat.style.backgroundImage = sprites.cat.idle_b
+        player.style.backgroundImage = `url(${sprites.player.idle_b})`
+        cat.style.backgroundImage = `url(${sprites.cat.idle_b})`
         characterContainer.style.flexDirection = 'column'
       }
     }
@@ -68,8 +83,8 @@ function Sections() {
       animationInterval = setInterval(() => {
         currentFrame = 1 - currentFrame
         const directionSprites = lastScrollDirection === 'down' ? 'walk_f' : 'walk_b'
-        player.style.backgroundImage = sprites.player[directionSprites][currentFrame]
-        cat.style.backgroundImage = sprites.cat[directionSprites][currentFrame]
+        player.style.backgroundImage = `url(${sprites.player[directionSprites][currentFrame]})`
+        cat.style.backgroundImage = `url(${sprites.cat[directionSprites][currentFrame]})`
       }, 300)
     }
 
@@ -214,8 +229,8 @@ function Sections() {
         </div>
 
         <div className='hero-images'>
-          <img className='sprite-full' src="./src/assets/sprites/sprites-mia/sprite-mia-full-1.png" alt="" />
-          <img className='sprite-full' src="./src/assets/sprites/sprites-ana/sprite-ana-full-1.png" alt="" />
+          <img className='sprite-full' src={spriteFullMia} alt="" />
+          <img className='sprite-full' src={spriteFullAna} alt="" />
         </div>
       </section>
 

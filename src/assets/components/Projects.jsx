@@ -1,70 +1,80 @@
+import jogoInvestImg from '../img/jogo-investidor-img.png'
+import metaversoImg from '../img/tindin-metaverso-img.png'
+import litermaImg from '../img/literama-img.png'
+import seafoodBoilerImg from '../img/seafood-boiler-img.png'
+import adopetImg from '../img/adopet-img.png'
+import lunarImg from '../img/lunar-img.png'
+import dinozooImg from '../img/dinozoo-img.png'
+import ruleOfRoseImg from '../img/rule-of-rose-img.png'
+import hifirushImg from '../img/hi-fi-rush-img.png'
+import iguanagamesImg from '../img/iguana-games-img.png'
+
 function Projects() {
     const projects = {
         "p-10": {
-            img: "./src/assets/img/jogo-investidor-img.png",
+            img: jogoInvestImg,
             title: "Jogo do Investidor - Tindin (2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts, interfaces e landing page, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://www.ojogodoinvestidor.com.br/index.html"
         },
         "p-9": {
-            img: "./src/assets/img/tindin-metaverso-img.png",
+            img: metaversoImg,
             title: "Metaverso Educacional - Tindin (2024-2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts e interfaces, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://app.tindin.com.br/game"
         },
         "p-8": {
-            img: "./src/assets/img/literama-img.png",
+            img: litermaImg,
             title: "Literama - Tindin (2024-2025)",
             sub: "Implementação de novo design para o jogo, incluindo menus, layouts e interfaces, seguindo o padrão de projeto do Design System.",
             tags: ["HTML", "CSS", "JavaScript", "React", "UX/UI", "Tipografia"],
             link: "https://literama.tindin.com.br/game"
         },
         "p-7": {
-            img: "./src/assets/img/seafood-boiler-img.png",
+            img: seafoodBoilerImg,
             title: "Seafood Boiler (2025)",
             sub: "Criação de projeto desenvolvido utilizando Figma + WebFlow.",
             tags: ["WebFlow", "UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://preview.webflow.com/preview/seafood-boiler-0a3c5e?utm_medium=preview_link&utm_source=designer&utm_content=seafood-boiler-0a3c5e&preview=dbad80b47668fe095266a7bab79a4255&workflow=sitePreview"
         },
         "p-6": {
-            img: "./src/assets/img/adopet-img.png",
-            title: "AdoPet (2023)",
+            img: adopetImg,
             sub: "Wireframes e protótipos low/hi fidelity de um site/app de adoção de animais.",
             tags: ["UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://www.figma.com/proto/Bx4F2mLDuNmL1VhcCd89Mx/adopet?page-id=104%3A78&type=design&node-id=104-1523&viewport=299%2C110%2C0.04&t=V8wjQuzEGLRv9scM-1&scaling=scale-down-width&starting-point-node-id=104%3A1523"
         },
         "p-5": {
-            img: "./src/assets/img/lunar-img.png",
+            img: lunarImg,
             title: "Lunar (2023)",
             sub: "Wireframes e protótipos low/hi fidelity de um site/app da primeira colônia lunar da história.",
             tags: ["UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://www.figma.com/proto/PquDgnCeXqkwkoapyUqUYn/Lunar?page-id=30%3A2&type=design&node-id=30-4&viewport=241%2C185%2C0.08&t=G6HPmGEGKlLwD2y7-1&scaling=scale-down-width&starting-point-node-id=30%3A4"
         },
         "p-4": {
-            img: "./src/assets/img/dinozoo-img.png",
+            img: dinozooImg,
             title: "DinoZoo (2023)",
             sub: "Wireframes e protótipos low/hi fidelity de um site/app de um zoológico de dinossauros.",
             tags: ["UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://www.figma.com/proto/2bWmKlSFxdfkMgD9h3LxNB/dinozoo?page-id=328%3A2&type=design&node-id=345-153&viewport=571%2C222%2C0.02&t=6FiKoJVq8KUBMTmy-1&scaling=scale-down-width&starting-point-node-id=345%3A153"
         },
         "p-3": {
-            img: "./src/assets/img/rule-of-rose-img.png",
+            img: ruleOfRoseImg,
             title: "Rule of Rose (2023)",
             sub: "Wireframes e protótipos low/hi fidelity de um site/app do jogo 'Rule of Rose' (2006).",
             tags: ["UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://www.figma.com/proto/lk1fKIHUfmNZtPmCfc6Fwb/RoR?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&scaling=scale-down-width&t=yFwFW0ZWBiW6ZWZU-1s"
         },
         "p-2": {
-            img: "./src/assets/img/hi-fi-rush-img.png",
+            img: hifirushImg,
             title: "Hi-Fi Rush (2023)",
             sub: "Um site ficcional da banda 'Hi-Fi Rush' do jogo de mesmo nome.",
             tags: ["HTML", "CSS", "UX/UI", "Tipografia"],
             link: "https://github.com/anasander/hi-fi-rush"
         },
         "p-1": {
-            img: "./src/assets/img/iguana-games-img.png",
+            img: iguanagamesImg,
             title: "Iguana Games (2022)",
             sub: "Um site ficcional de uma empresa de venda de jogos de videogame e seus acessórios.",
             tags: ["HTML", "CSS", "JavaScript", "UX/UI", "Tipografia"],

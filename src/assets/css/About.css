@@ -218,6 +218,7 @@
   background-size:cover;
   background-position:center;
   border-radius:10px;
+  transition: background-image 0.3s ease, opacity 0.3s ease;
 }
 
 #details-label {

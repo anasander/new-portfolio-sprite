@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import anaImg from "../img/photo-ana.jpg";
+import miaImg from "../img/photo-mia.jpg";
 
 function Pokedevice() {
   const [character, setCharacter] = useState(null);
@@ -6,11 +8,11 @@ function Pokedevice() {
 
   const data = {
     ana: {
-      image: "url('./src/assets/img/photo-ana.jpg')",
+      image: anaImg,
       text: "Ana: desenvolvedora criativa e adora participar de projetos incríveis usando suas habilidades em Web Design, UX/UI Design e Front-End. Games são sua paixão, e seu jogo favorito é 'Shadow of the Colossus'."
     },
     mia: {
-      image: "url('./src/assets/img/photo-mia.jpg')",
+      image: miaImg,
       text: "Mia: parceira felina. Fofa e medrosa em proporções iguais; ilumina a vida de todos ao seu redor. Adora falar (miar) e também devorar derivados lácteos."
     }
   };
@@ -50,10 +52,11 @@ function Pokedevice() {
                 id="image-display"
                 style={{
                   backgroundImage: character
-                    ? data[character].image
+                    ? `url(${data[character].image})`
                     : "none",
                   backgroundSize: "cover",
-                  backgroundPosition: "center"
+                  backgroundPosition: "center",
+                  opacity: character ? 1 : 0.5,
                 }}
               ></div>
             </div>
