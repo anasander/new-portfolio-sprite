@@ -1,16 +1,34 @@
-# React + Vite
+<h1>Portfolio - Sprite</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Project Description</h2>
+<p>My new portfolio, with new and improved design, based on the art direction of the secong generation of Pokémon games (Gold/Silver/Crystal). Contains the sections 'About', 'Ed. Background', 'Projects' and 'Contact'. And maybe some secrets along the way...</p>
+<p>You can see the repository in action at: <a href='https://portfolio-sprite.vercel.app/'>Portfolio - Sprite</a>.</p>
+</br>
 
-Currently, two official plugins are available:
+![portfolioSprite](https://github.com/user-attachments/assets/50a3d3e3-89c3-4839-b66e-9b84ba303291)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Project Status</h2>
+<p>✨ COMPLETE ✨</p>
 
-## React Compiler
+<h2>Technologies Used / Knowledge Required</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React/Vue</li>
+</ul>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h2>Project's Functionalities</h2>
+<ul>
+<li>My new and improved Portfolio</li>
+<li>Entire design based on the old Pkémon games for GameBoy Color</li>
+<li>There are at least 2 secrets in this site. Can you find them all? :)</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h2>Accessing the Project</h2>
+<p>You can access the source code of the project or download it.</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h2>Author(s)</h2>
+<ul>
+<li><a href='https://github.com/anasander'>Ana Sander</a></li>
+</ul>
