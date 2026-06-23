@@ -41,6 +41,7 @@ function Projects() {
         },
         "p-6": {
             img: adopetImg,
+            title: "Adopet (2023)",
             sub: "Wireframes e protótipos low/hi fidelity de um site/app de adoção de animais.",
             tags: ["UX/UI", "Tipografia", "Acessibilidade"],
             link: "https://www.figma.com/proto/Bx4F2mLDuNmL1VhcCd89Mx/adopet?page-id=104%3A78&type=design&node-id=104-1523&viewport=299%2C110%2C0.04&t=V8wjQuzEGLRv9scM-1&scaling=scale-down-width&starting-point-node-id=104%3A1523"
