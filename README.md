@@ -21,7 +21,7 @@
 <h2>Project's Functionalities</h2>
 <ul>
 <li>My new and improved Portfolio</li>
-<li>Entire design based on the old Pkémon games for GameBoy Color</li>
+<li>Entire design based on the old Pokémon games for GameBoy Color</li>
 <li>There are at least 2 secrets in this site. Can you find them all? :)</li>
 </ul>
 
