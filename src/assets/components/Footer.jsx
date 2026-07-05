@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <footer id="footer">
-      <Link to="/Secret" className='chest' onClick={handleShowChest}></Link>
+      <Link to="/secret" className='chest' onClick={handleShowChest}></Link>
     </footer>
   )
 }
