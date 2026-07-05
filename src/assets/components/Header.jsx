@@ -47,7 +47,7 @@ function Header() {
   };
 
   const location = useLocation();
-  const isSecretPage = location.pathname === '/Secret';
+  const isSecretPage = location.pathname === '/secret';
 
   return (
     <header id="header">
@@ -60,7 +60,7 @@ function Header() {
           <a href="#ed-background" className='text-size-20'>Formação</a>
           <a href="#projects" className='text-size-20'>Projetos</a>
           <a href="#contact" className='text-size-20'>Contato</a>
-          <Link to="/Secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}
+          <Link to="/secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}
           ></Link>
         </nav>
       )}
@@ -90,7 +90,7 @@ function Header() {
               <a href="#ed-background" onClick={handleCloseMenu}>Formação</a>
               <a href="#projects" onClick={handleCloseMenu}>Projetos</a>
               <a href="#contact" onClick={handleCloseMenu}>Contato</a>
-              <Link to="/Secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}></Link>
+              <Link to="/secret" className={`chest ${displayChest ? 'display-flex' : 'display-none'}`}></Link>
             </nav>
           </div>
         </div>
