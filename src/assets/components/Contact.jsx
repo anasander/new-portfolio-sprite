@@ -15,7 +15,7 @@ function Contact() {
                         <p className="text-size-20">Parabéns! *clap* *clap*</p>
                         <a href="https://www.youtube.com/watch?v=l04_GGlr3BI" className="text-size-20 parabains" target="_blank" rel="noopener noreferrer">Parabéns! *clap* *clap*</a>
                     </div>
-                    <p className="text-size-20">Agora que já conhece mais sobre mim, minha trajetória e minhas habilidades, pode entrar em contato através dos links abaixo:</p>
+                    <p className="text-size-20">Agora que já conhece mais sobre mim, minha trajetória e habilidades, entre em contato através dos canais abaixo:</p>
                 </div>
 
                 <div className="contact-container-links">

@@ -9,7 +9,7 @@ function Pokedevice() {
   const data = {
     ana: {
       image: anaImg,
-      text: "Ana: desenvolvedora criativa e adora participar de projetos incríveis usando suas habilidades em Web Design, UX/UI Design e Front-End. Games são sua paixão, e seu jogo favorito é 'Shadow of the Colossus'."
+      text: "Ana: desenvolvedora criativa que adora participar de projetos incríveis usando suas habilidades em Web Design, UX/UI Design e Front-End. Games são sua paixão, e seu jogo favorito é 'Shadow of the Colossus'."
     },
     mia: {
       image: miaImg,

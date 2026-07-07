@@ -228,7 +228,7 @@ function Sections() {
         <div className='hero-titles'>
           <h1 className='font-primary text-size-96'>Ana Sander</h1>
           <div className='hero-exp text-size-32'>
-            <p>Web Designer | UX/UI Designer</p>
+            <p>UX/UI Designer | Web Designer</p>
             <p>Front-End Developer</p>
           </div>
         </div>
@@ -279,6 +279,11 @@ function Sections() {
               <img src={currentEd.img} alt={currentEd.title} />
               <h3>{currentEd.title}</h3>
               <p>{currentEd.text}</p>
+              <div className="tags">
+                {currentEd.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
 
               {currentEd.link && (
                 <a
@@ -290,12 +295,6 @@ function Sections() {
                   Acessar ↗
                 </a>
               )}
-
-              <div className="tags">
-                {currentEd.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
             </div>
           </div>
         )}

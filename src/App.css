@@ -98,6 +98,7 @@ body {
     border-style: outset;
     border-color: var(--black);
     filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.25));
+    gap: 30px;
 }
 
 .scroll-to-section {
