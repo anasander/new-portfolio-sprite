@@ -8,11 +8,13 @@ import dinozooImg from '../img/dinozoo-img.png'
 import ruleOfRoseImg from '../img/rule-of-rose-img.png'
 import hifirushImg from '../img/hi-fi-rush-img.png'
 import iguanagamesImg from '../img/iguana-games-img.png'
-import stationsAppImg from '../img/stations-app-img.png'
+// import stationsAppImg from '../img/stations-app-img.png'
+import dsImg from '../img/ds-img.png'
+import trackingImg from '../img/tracking-img.png'
 
 export const projectsData = {
     "p-12": {
-        img: stationsAppImg,
+        img: trackingImg,
         title: "Implementação de tracking no SuperApp - Stations (2026)",
         sub: "Estruturar, planejar e documentar um sistema de tracking escalável para mapear comportamentos, identificar gargalos de usabilidade e guiar a evolução contínua do produto.",
         tags: ["Data-driven UX", "Product Design", "UX/UI", "Design System"],
@@ -55,7 +57,7 @@ export const projectsData = {
         }
     },
     "p-11": {
-        img: stationsAppImg,
+        img: dsImg,
         title: "Manutenção do Design System - Stations (2026)",
         sub: "Criação de novos componentes robustos, arquitetura baseada em propriedades escaláveis e implementação de um fluxo de governança para manutenção do Design System.",
         tags: ["Product Design", "UX/UI", "Design System"],
